@@ -1,0 +1,80 @@
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <div class="head">
+          <h2 id="part1">Tasks <span id="text">List</span></h2>
+        </div>
+        <div onclick="openFirstPage()" class="back">
+          <button class="arr">&lt;</button><span class="white1"> Back</span>
+        </div>
+        <div class="button">
+          <button onclick="showAddCardPop()" class="add_button">+</button>
+          <span class="text1">&nbsp; Add Item</span>
+        </div>
+      </div>
+
+      <div class="each-card"></div>
+
+      <div id="card-container"></div>
+    </div>
+
+    <div class="popup2" id="popup2">
+      <div class="both">
+        <p class="p">Add new item in Card</p>
+        <br />
+
+        <input
+          type="text"
+          placeholder="Add new task"
+          class="inp2"
+          id="card-content-input"
+        />
+      </div>
+      <br />
+
+      <div class="buttons">
+        <button onclick="addContentToCard()" class="addtask" id="addtask">
+          Add
+        </button>
+        <button onclick="removeAddContentToCardPopup()" class="closetask">
+          Close
+        </button>
+      </div>
+    </div>
+
+    <div class="pop_up">
+      <div class="part">
+        <div class="part1">Add New Task</div>
+      </div>
+      <br />
+      <br />
+
+      <input
+        type="text"
+        class="para3"
+        id="card-input-text"
+        placeholder="add new task"
+      />
+      <br />
+      <br />
+      <button class="button3" onClick="closeAddCardPopup()">close</button>
+      <button class="button4" onClick="handleAddCard()">add</button>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
